@@ -1,0 +1,9 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/echo/.cache/gnome-builder/install/gatekeeper/host
+app-id=
+postbuild=
+prebuild=

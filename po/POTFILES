@@ -1,0 +1,5 @@
+data/org.gnome.Gatekeeper.desktop.in
+data/org.gnome.Gatekeeper.appdata.xml.in
+data/org.gnome.Gatekeeper.gschema.xml
+src/gatekeeper-window.uisrc/main.c
+src/gatekeeper-window.c

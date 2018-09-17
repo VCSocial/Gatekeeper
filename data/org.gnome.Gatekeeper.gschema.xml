@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="gatekeeper">
+	<schema id="org.gnome.Gatekeeper" path="/org/gnome/Gatekeeper/">
+	</schema>
+</schemalist>
