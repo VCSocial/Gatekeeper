@@ -24,12 +24,13 @@ struct _GatekeeperWindow
   GtkApplicationWindow  parent_instance;
 
   /* Template widgets */
+  GtkBox              *content_box;
   GtkHeaderBar        *header_bar;
-  GtkLabel            *label;
+  GtkSearchBar        *search_bar;
+  GtkSearchEntry      *search_entry;
 };
 
 G_DEFINE_TYPE (GatekeeperWindow, gatekeeper_window, GTK_TYPE_APPLICATION_WINDOW)
-
 
 static void
 gatekeeper_window_class_init (GatekeeperWindowClass *klass)
@@ -38,7 +39,9 @@ gatekeeper_window_class_init (GatekeeperWindowClass *klass)
 
   gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/Gatekeeper/gatekeeper-window.ui");
   gtk_widget_class_bind_template_child (widget_class, GatekeeperWindow, header_bar);
-  gtk_widget_class_bind_template_child (widget_class, GatekeeperWindow, label);
+  gtk_widget_class_bind_template_child (widget_class, GatekeeperWindow, content_box);
+  gtk_widget_class_bind_template_child (widget_class, GatekeeperWindow, search_bar);
+  gtk_widget_class_bind_template_child (widget_class, GatekeeperWindow, search_entry);
 }
 
 static void
